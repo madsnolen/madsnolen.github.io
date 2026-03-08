@@ -15,10 +15,15 @@ nav a{ /* links within "nav" container */
     color: white;        /* by default, links are blue */
 }
 
-nav a{ /*pseudo class*/
+nav a:hover{ /*pseudo class*/
     border-bottom: 2px darksalmon solid;
     font-size: 2em;
     transition: .9s; /*transition effect */
+}
+
+.current{
+    border-bottom: 3px darksalmon solid;
+    font-weight: bold;
 }
 
 
