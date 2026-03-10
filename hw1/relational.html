@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1 HTML and CSS Home Page</title>
+    <link href="css/stylesHW1.css" rel="stylesheet">
+</head>
+
+ <body>
+        <header>
+            <!-- h1 is the main heading makes font bigger since it is the main heading (h1) -->
+           <h1> Introduction to Databases</h1> 
+        </header>  
+        
+        <nav>
+            <a href="home.html"> Home</a>
+            <a href="relational.html" class="current">Relational Databases</a>
+            <a href="nosql.html"> NoSQL Databases</a>
+            <a href="realworld.html"> Real World Uses</a>
+        </nav>
+
+
+        <br><br>
+
+    
+        <main>
+          
+
+            
+            <div>
+               
+
+                <section class="content-box">
+                <p>
+                   <strong>Tables, Rows, and Columns:</strong> <br />
+                   Relational databases store data in tables that organzie information into rows and colums.
+                   Each table represents a specific type of data such as customers, products, or orders. 
+                   Columns define the type of information stored in each row, such as name, age, or price.
+                   Each row represents a single record or entry in the table, while each column stores a specific type of information such as name, age, or price.                   
+                </p>
+                </section>
+
+                <section class="content-box">
+                <p>
+                    <strong>SQL:</strong> <br />
+                    SQL (Structured Query Language) is used to interact with relational databases. 
+                    It allows users to store, retrieve, update, and delete data within database tables. 
+                    SQL works by sending queries to the database, which then returns the requested information. 
+                    SQL is used by many relational database systems such as MySQL and Oracle.
+                </p>
+                </section>
+                
+                <section class="content-box">
+                <p>
+                    <strong>Example of Relational Databases:</strong> <br />
+                    Here we have an example of a relational database that contains information about dogs. 
+                    Each row represents a different dog, and each column represents a specific attribute such as its name, breed, color, or age. 
+                    The first column contains a unique identifier for each dog, called the tag number. 
+                    This structure makes it easy to organize, search, and retrieve information about each dog.
+                </p>
+
+                <figure>
+                    <img src="img/dog_relational_database-1.png">
+                </figure>
+
+
+            <div id="content">
+            <!-- Create the table to hopld experience data -->
+             <table>
+                <tr id="table-header">
+                    <td><strong>Tag # </strong></td>
+                    <td><strong>Name</strong></td>
+                    <td><strong>Breed</strong></td>
+                    <td><strong>Color</strong></td>
+                    <td><strong>Age</strong></td>
+
+                </tr>
+                <tr class="table-row">
+                    <td>1573</td>
+                    <td>Fido</td>
+                    <td>Beagle</td>
+                    <td>Brown/White</td>
+                    <td>1.5</td>
+                </tr>
+                <tr class="table-row">
+                    <td>2684</td>
+                    <td>Rex</td>
+                    <td>Pekingese</td>
+                    <td>White</td>
+                    <td>9</td>
+                </tr>
+                <tr class="table-row">
+                    <td>3795</td>
+                    <td>Bubbles</td>
+                    <td>Rottweiler</td>
+                    <td>Black</td>
+                    <td>5</td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>4806</td>
+                    <td>Cujo</td>
+                    <td>Chihuahua</td>
+                    <td>Gold</td>
+                    <td>4</td>
+                </tr>
+                
+             </table>
+            
+                <p>
+                    <strong>Example SQL Query:</strong>
+                </p>
+                
+                <div class="sql-code">
+                <pre><code>
+                    SELECT Name, Breed
+                    FROM Dogs
+                    WHERE Age > 3;
+                </code></pre>
+                </div>
+
+                <p>
+                    This SQL query returns the names and breeds of all dogs older than 3 years.
+                </p>
+
+                <p>
+                    Cujo Chihuahua
+                </p>
+
+                <p>
+                    Rex Pekingese
+
+                </p>
+
+                <p>
+                    Bubbles Rottweiler
+                </p>
+                </section>
+
+            </div>
+
+                <br><br>
+
+                References: <br />
+                <!-- THIS IS WHERE YOU PUT REFERENCES -->
+                <em>
+                     <a href="https://www.oracle.com/database/what-is-a-relational-database/"> Oracle Reference</a>
+                     <a href="https://insightsoftware.com/blog/whats-the-difference-relational-vs-non-relational-databases/"> Image Reference</a>
+                </em>
+                <br>
+                
+            </div>
+
+        </main>
+
+        
+        <footer style="background-color: black; color:steelblue ">
+             <!-- Your last name and year here in ALL assignments -->
+              <hr>
+              CST336 Internet Programming. 2026&copy; Nolen <br>
+              <strong>Disclaimer: </strong> This webpage is for academic purposes only.
+
+               <figure>
+                <img src="img/csumb_logo.png">
+            </figure>
+        </footer>
+        
+    </body>
+</html>

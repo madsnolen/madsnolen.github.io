@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1 HTML and CSS Home Page</title>
+    <link href="css/stylesHW1.css" rel="stylesheet">
+</head>
+
+ <body>
+        <header>
+            <!-- h1 is the main heading makes font bigger since it is the main heading (h1) -->
+           <h1> Introduction to Databases</h1> 
+        </header>  
+        
+        <nav>
+            <a href="home.html"> Home</a>
+            <a href="relational.html">Relational Databases</a>
+            <a href="nosql.html" class="current"> NoSQL Databases</a>
+            <a href="realworld.html"> Real World Uses</a>
+        </nav>
+
+
+        <br><br>
+
+    
+        <main>
+            <figure>
+                <img src="img/no-sql-databases.png">
+            </figure>
+            
+            <div>
+               <section class="content-box">
+                <p> 
+                    <strong>NoSQL Databases</strong> <br />
+                    NoSQL databases are databases that store and manage data data without using
+                    the tradtional table structure fouind in relational databases. Instead of organzing data into
+                    rows and columns, NoSQL databases use more flexible formats such as documents, key-value pairs,
+                    graphs, or wide columns. This allows them to handle large amounts of unstructured or everyday changing data.
+                    <br />
+                </p>
+                </section>
+
+                <section class="content-box">
+                <p>
+                    <strong>Flexible Data Models:</strong> <br />
+                    An advatge of NoSQL databases is their flexible data moadels. Unlike relational databases
+                    which reqiure a fixed table structure. NoSQL databases allow different reocrds to contain different fields. 
+                    This felxibility makes NoSQL databases useful for applications that store large amounts of data that constantly change. 
+                   
+                </p>
+                </section>
+
+                <section class="content-box">
+                <p>
+                    <strong>Document Databases:</strong> <br />
+                    Document Databases store information in documents, often formatted as JSON structures. 
+                    Each document can contain multiple fields and nested data, allowing more complex information
+                    to be stored in a single record. 
+
+                </p>
+                </section>
+                
+                <section class="content-box">
+                <p>
+                    <strong>Example of NoSQL Databases:</strong> <br />
+                    MongoDB is a widely used NoSQL database. It stores data in flexible documents rather than tradtional tables.
+                    This makes MongoDB popular for modern web applications that need to scale quickly and manage large datasets. 
+
+                </p>
+                </section>
+
+                 <section class="content-box">
+                <p>
+
+                    <strong>Here is an example of NoSQL Document in JSON:</strong>
+
+                    <div class="sql-code">
+                    <pre><code>
+                    {
+                        "name": "Fido",
+                        "breed": "Beagle",
+                        "color": "Brown/White",
+                        "age": 1.5
+                    }
+                    </code></pre>
+                    </div>
+                </p>
+                </section>
+
+                <br><br>
+
+                References: <br />
+                <!-- THIS IS WHERE YOU PUT REFERENCES -->
+                <em>
+                     <a href="https://www.mongodb.com/resources/basics/databases/nosql-explained"> MongoDB Reference</a>
+                    <a href="https://www.scnsoft.com/data/nosql-databases"> Image Reference</a>
+                </em>
+                <br>
+                
+            </div>
+
+        </main>
+
+        
+        <footer style="background-color: black; color:steelblue ">
+             <!-- Your last name and year here in ALL assignments -->
+              <hr>
+              CST336 Internet Programming. 2026&copy; Nolen <br>
+              <strong>Disclaimer: </strong> This webpage is for academic purposes only.
+
+               <figure>
+                <img src="img/csumb_logo.png">
+            </figure>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    background-color:black;
+    color:rgb(255, 255, 255);
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+header, main, nav, footer{
+    text-align: center;
+}
+
+nav a{ /* links within "nav" container */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: white;        /* by default, links are blue */
+}
+
+nav a:hover{ /*pseudo class*/
+    border-bottom: 2px rgb(245, 169, 169) solid;
+    font-size: 2em;
+    transition: .9s; /*transition effect */
+}
+
+.current{
+    border-bottom: 2px rgb(244, 169, 169) solid;
+    font-weight: bold;
+}
+
+
+table{
+    margin: 0px auto;
+}
+
+
+td{
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+iframe{
+    text-align:left;
+}
+
+td strong{
+    color: rgb(0, 0, 0);
+}
+
+#table-header{
+    background-color: #2e4d9b;
+}
+
+.table-row{
+    background-color: #79a1da;
+}
+/*
+Needed pre tag so my SQL code would be formatted correctly and not run together. 
+I also added a class to center the SQL code on the page.
+*/
+pre{
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+}
+
+.sql-code {
+    text-align: center;
+}
+
+figure img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.content-box{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+
