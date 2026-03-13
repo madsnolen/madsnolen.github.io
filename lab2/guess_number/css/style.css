@@ -1,1 +1,70 @@
+body{
+    background-color: rgb(102, 102, 102);
+    color: lightgray;
+    font-family: "courier new", monospace;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.6;
+}
+
+header, main, nav, footer{
+    text-align: center;
+    padding: 20px;
+}
+
+header{
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+body{
+    background-image: url("../img/background_numbers.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: lightgray;
+    font-family: "courier new", monospace;
+}
+
+
+#main{
+    background-color: rgba(0,0,0,0.75);
+    padding: 20px;
+    width: 400px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+
+button{
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    font-family: "courier new", monospace;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkred;
+}
+
+
+#playerGuess{
+    width: 80px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+#feedback{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
 
