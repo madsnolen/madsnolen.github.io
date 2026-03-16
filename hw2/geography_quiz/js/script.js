@@ -7,7 +7,7 @@ var attempts = localStorage.getItem("totalAttempts");
 
 displayQ4Choices();
 
-//dunction to display question 4 choices
+//dunction to display  question 4 choices
 function displayQ4Choices(){
     let q4ChoicesArray = ["Maine", "Rhode Island", "Maryland", "Delaware"];
     q4ChoicesArray = _.shuffle(q4ChoicesArray);
@@ -86,13 +86,6 @@ else{
     wrongAnswer(5);
 }
 
- //grading question 2
- if(q2Reponse == "ms"){
-   rightAnswer(2);
-}
-else{
-    wrongAnswer(2);
-}
 
 document.querySelector("#totalScore").innerHTML = `Total Score: ${score}`;
 //add if statement here to Display the Total Score message in red if the score is lower than 80 or in green otherwise.
