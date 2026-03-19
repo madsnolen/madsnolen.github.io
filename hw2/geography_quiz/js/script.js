@@ -48,29 +48,27 @@ function gradeQuiz(){
 
  //variables
  score = 0;
-let q1Reponse = document.querySelector("#q1").value.toLowerCase();
+let q1Reponse = document.querySelector("#q1").value.toLowerCase().trim();
 let q2Reponse = document.querySelector("#q2").value;
-let q5Reponse = document.querySelector("#q5").value.toLowerCase();
+let q5Reponse = document.querySelector("#q5").value.toLowerCase().trim();
 let q6Reponse = document.querySelector("#q6").value;
-let q9Reponse = document.querySelector("#q9").value.toLowerCase();
-let q10Reponse = document.querySelector("#q10").value.toLowerCase();
+let q9Reponse = document.querySelector("#q9").value.toLowerCase().trim();
+let q10Reponse = document.querySelector("#q10").value.trim();
 
-let q4Selected = document.querySelector("input[name=q4]:checked");
-let q8Selected = document.querySelector("input[name=q8]:checked");
+let q4Selected = document.querySelector("input[name='q4']:checked");
+let q8Selected = document.querySelector("input[name='q8']:checked");
 
 let q4Reponse = q4Selected ? q4Selected.value : "";
 let q8Reponse = q8Selected ? q8Selected.value : "";
 
-
-
-console.log(q1Reponse);
-console.log(q2Reponse);
-console.log(q4Reponse);
-console.log(q5Reponse);
-console.log(q6Reponse);
-console.log(q8Reponse);
-console.log(q9Reponse);
-console.log(q10Reponse);
+ console.log(q1Reponse);
+ console.log(q2Reponse);
+ console.log(q4Reponse);
+ console.log(q5Reponse);
+ console.log(q6Reponse);
+ console.log(q8Reponse);
+ console.log(q9Reponse);
+ console.log(q10Reponse);
 
  //grading question 1
  if(q1Reponse == "sacramento"){
@@ -120,7 +118,10 @@ else{
 }
 
 //grade question 7
-if(document.querySelector("#Florida").checked && document.querySelector("#South Carolina").checked && !document.querySelector("#Texas").checked && document.querySelector("#New Hampshire").checked){
+if( document.querySelector("#Florida").checked &&
+    document.querySelector("#SouthCarolina").checked &&
+    !document.querySelector("#Texas").checked &&
+    document.querySelector("#NewHampshire").checked){
     rightAnswer(7);
 }
 else{
@@ -166,6 +167,7 @@ if(score < 80){
     document.querySelector("#congratsMessage").className = "text-success";
 }
 
+attempts++;
 document.querySelector("#totalAttempts").innerHTML = `Total Attempts: ${++attempts}`;
 localStorage.setItem("totalAttempts", attempts);    
 }//gradeQuiz
