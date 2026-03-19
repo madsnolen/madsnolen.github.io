@@ -3,7 +3,7 @@ document.querySelector("button").addEventListener("click", gradeQuiz);
 
 //Global variables 
 var score = 0;
-var attempts = localStorage.getItem("totalAttempts");
+var attempts = localStorage.getItem("totalAttempts") || 0;
 
 displayQ4Choices();
 displayQ8Choices();
@@ -48,26 +48,29 @@ function gradeQuiz(){
 
  //variables
  score = 0;
- let q1Reponse = document.querySelector("#q1").value.toLowerCase();
- let q2Reponse = document.querySelector("#q2").value;
- let q4Reponse = document.querySelector("input[name=q4]:checked").value;
- let q5Reponse = document.querySelector("#q5").value.toLowerCase();
- let q6Reponse = document.querySelector("#q6").value;
- let q8Reponse = document.querySelector("input[name=q8]:checked").value;
- let q9Reponse = document.querySelector("#q9").value.toLowerCase();
- let q10Reponse = document.querySelector("#q10").value.toLowerCase();
+let q1Reponse = document.querySelector("#q1").value.toLowerCase();
+let q2Reponse = document.querySelector("#q2").value;
+let q5Reponse = document.querySelector("#q5").value.toLowerCase();
+let q6Reponse = document.querySelector("#q6").value;
+let q9Reponse = document.querySelector("#q9").value.toLowerCase();
+let q10Reponse = document.querySelector("#q10").value.toLowerCase();
+
+let q4Selected = document.querySelector("input[name=q4]:checked");
+let q8Selected = document.querySelector("input[name=q8]:checked");
+
+let q4Reponse = q4Selected ? q4Selected.value : "";
+let q8Reponse = q8Selected ? q8Selected.value : "";
 
 
 
- console.log(q1Reponse);
- console.log(q2Reponse);
- console.log(q4Reponse);
- console.log(q5Reponse);
- console.log(q6Reponse);
- console.log(q7Reponse);
- console.log(q8Reponse);
- console.log(q9Reponse);
- console.log(q10Reponse);
+console.log(q1Reponse);
+console.log(q2Reponse);
+console.log(q4Reponse);
+console.log(q5Reponse);
+console.log(q6Reponse);
+console.log(q8Reponse);
+console.log(q9Reponse);
+console.log(q10Reponse);
 
  //grading question 1
  if(q1Reponse == "sacramento"){
@@ -109,7 +112,7 @@ else{
 }
 
 //grade question 6
- if(q2Reponse == "al"){
+ if(q6Reponse == "al"){
    rightAnswer(6);
 }
 else{
@@ -132,7 +135,7 @@ if(q8Reponse == "Florida"){
 }
 
 //grade question 9
- if(q1Reponse == "california"){
+ if(q9Reponse == "california"){
     rightAnswer(9);
 }
 else{
