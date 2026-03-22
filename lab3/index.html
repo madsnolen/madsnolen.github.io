@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title> Sign Up Page </title>
-    <link href="css/styles.css" rel="stylesheet">
-
+   <title>Sign Up Page</title>
+   <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-    <h1> Sign Up </h1>
-    <form id="signupForm" action="welcome.html">
-     First Name:<input type="text" name="fName"><br>
-     Last Name: <input type="text" name="lName"><br>
-     <div class ="gender"> 
-     Gender:    
-         <input type="radio" name="gender" value="m">Male
-         <input type="radio" name="gender" value="f">Female<br><br>	
-         </div>
-   
-      Zip Code:  <input type="text" id="zip" name="zip"><br>
-     <div class ="city_lat_long"> 
-      City:   <span id="city"></span> <br>
-      Latitude:  <span id="latitude"></span><br>
-      Longitude: <span id="longitude"></span><br><br>
-       </div>
-      
+        <h1>Sign Up</h1>
 
-      State: 
-      <select id="state" name="state">
-            <option value="">Select One</option>
-       </select> <br>
+        <form id="signupForm" action="welcome.html">
+            First Name:<input type="text" name="fName"><br>
+            Last Name: <input type="text" name="lName"><br>
 
+            <div class="gender">
+                Gender:
+                <input type="radio" name="gender" value="m">Male
+                <input type="radio" name="gender" value="f">Female<br><br>
+            </div>
 
-       Select a County: <select id="county"></select><br>
+            Zip Code: <input type="text" id="zip" name="zip"><br>
 
+            <div class="city_lat_long">
+                City: <span id="city"></span><br>
+                Latitude: <span id="latitude"></span><br>
+                Longitude: <span id="longitude"></span><br><br>
+            </div>
 
-       Desired Username: <input type="text" id="username" ><br><br>
-                         <span id="usernameError"></span><br>
-        Password: <input type="password" id="password" name="password"><br>
-<span id="suggestedPassword"></span> <br>
-        Type Password Again: <input type="password" id="retypePassword"><br>
-   
-    <span id="passwordError"></span> 
+            State:
+            <select id="state" name="state">
+                <option value="">Select One</option>
+            </select><br>
 
-         <input type="submit" value="Sign up!" class="submitButton">
-     </div>
+            Select a County: <select id="county"></select><br>
 
-    </form>
+            Desired Username: <input type="text" id="username"><br><br>
+            <span id="usernameError"></span><br>
+
+            Password: <input type="password" id="password" name="password"><br>
+            <span id="suggestedPassword"></span><br>
+
+            Type Password Again: <input type="password" id="retypePassword"><br>
+            <span id="passwordError"></span>
+
+            <input type="submit" value="Sign up!" class="submitButton">
+        </form>
+    </div>
 
     <script src="js/script.js"></script>
 
-    <footer style="background-color: rgb(255, 255, 255); color:steelblue ">
-             <!-- Your last name and year here in ALL assignments -->
-              <hr>
-              CST336 Interent Programming. 2026&copy; Nolen <br>
-
-               <figure>
-                <img src="img/csumb_logo.png">
-            </figure>
-        </footer>
+    <footer>
+        <hr>
+        CST336 Internet Programming. 2026&copy; Nolen <br>
+        <figure>
+            <img src="img/csumb_logo.png">
+        </figure>
+    </footer>
 </body>
 </html>
