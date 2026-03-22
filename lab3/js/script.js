@@ -2,10 +2,10 @@
 document.querySelector("#zip").addEventListener("change", displayCity);
 document.querySelector("#state").addEventListener("change", displayCounties);
 document.querySelector("#username").addEventListener("change", checkUsername);
+document.querySelector("#password").addEventListener("click", suggestedPassword);
 document.querySelector("#signupForm").addEventListener("submit", function(event){
     validateForm(event);
 });
-document.querySelector("#password").addEventListener("click", getSuggestedPassword);
 
 displayStates();
 
@@ -24,7 +24,7 @@ async function displayCity(){
     document.querySelector("#latitude").innerHTML = "";
     document.querySelector("#longitude").innerHTML = "";
 
-    //// check if zip is invalid
+    // check if zip is invalid
     if(!data.city){
         document.querySelector("#city").innerHTML = "Zip code not found";
         document.querySelector("#city").style.color = "red";
@@ -110,14 +110,13 @@ function validateForm(e){
     }
 }
 
-async function getSuggestedPassword(){
-    let url = "https://csumb.space/api/suggestedPassword.php";
+async function suggestedPassword(){
+    let url = "https://csumb.space/api/suggestedPassword.php?length=8";
     let response = await fetch(url);
     let data = await response.json();
 
-    console.log(data);
-
-    document.querySelector("#suggestedPwd").innerHTML = "Suggested Password: " + data.suggestedPassword;
-    document.querySelector("#suggestedPwd").style.color = "magenta";
+    document.querySelector("#suggestedPassword").innerHTML = "Suggested Password: " + data.password;
+    document.querySelector("#suggestedPassword").style.color = "magenta";
 }
+
 

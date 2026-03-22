@@ -1,23 +1,28 @@
-body, footer{
-    background-color:rgb(250, 200, 200);
-    color:rgb(0, 0, 0);
-    margin: 0px;
-    padding: 0px;
+body,footer {
+    background-color: rgb(250, 200, 200);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
     text-align: center;
+    font-family: "Courier New", monospace;
 }
 
-h1{
+h1 {
     text-align: center;
     color: #333;
 }
 
-.container{
-    width: 500px;
+.container {
+    width: 400px;
     margin: 50px auto;
     background-color: white;
     padding: 30px;
-    border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.city_lat_long, .gender {
+    text-align: left;
 }
 
 form{
@@ -26,70 +31,33 @@ form{
     gap: 10px;
 }
 
-input, select{
+input,select{
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-
-nav a:hover{ /*pseudo class*/
-    border-bottom: 2px darksalmon solid;
-    font-size: 2em;
-    transition: .9s; /*transition effect */
+#passwordError{
+    color: red;
+    font-size: 14px;
 }
 
-.current{
-    border-bottom: 2px darksalmon solid;
-    font-weight: bold;
+#usernameError{
+    color: red;
+    font-size: 14px;
 }
 
-
-main{
-    display: flex;
-    justify-content: center;
+#suggestedPassword {
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-
-table{
-    margin: 0px auto;
+.submitButton{
+    padding: 12px;
+    border-radius: 8px;
+    font-family:"Courier New", monospace; ;
 }
 
-
-td{
-    padding-right: 10px;
-    font-size: 1.3em;
+input[type="submit"]:hover {
+    background-color:  rgb(250, 200, 200);;
 }
-
-iframe{
-    text-align:left;
-}
-
-td strong{
-    color: darksalmon;
-}
-
-#table-header{
-    background-color: #1861b4;
-}
-
-.table-row{
-    background-color: #753900;
-}
-
-ul{
-    width:500px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.hobby{
-    color: yellow;
-}
-
-iframe{
-    display: block;
-    margin: 0 auto;
-}
-
-

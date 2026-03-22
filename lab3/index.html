@@ -3,6 +3,7 @@
 <head>
    <title> Sign Up Page </title>
     <link href="css/styles.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -11,14 +12,18 @@
     <form id="signupForm" action="welcome.html">
      First Name:<input type="text" name="fName"><br>
      Last Name: <input type="text" name="lName"><br>
+     <div class ="gender"> 
      Gender:    
-         <input type="radio" name="gender" value="m">Male<br>
-         <input type="radio" name="gender" value="f">Female<br>	
-    
+         <input type="radio" name="gender" value="m">Male
+         <input type="radio" name="gender" value="f">Female<br><br>	
+         </div>
+   
       Zip Code:  <input type="text" id="zip" name="zip"><br>
+     <div class ="city_lat_long"> 
       City:   <span id="city"></span> <br>
       Latitude:  <span id="latitude"></span><br>
       Longitude: <span id="longitude"></span><br><br>
+       </div>
       
 
       State: 
@@ -33,15 +38,15 @@
        Desired Username: <input type="text" id="username" ><br><br>
                          <span id="usernameError"></span><br>
         Password: <input type="password" id="password" name="password"><br>
-<span id="suggestedPwd"></span> <br>
+<span id="suggestedPassword"></span> <br>
         Type Password Again: <input type="password" id="retypePassword"><br>
    
-<span id="passwordError"></span> 
+    <span id="passwordError"></span> 
 
-         <input type="submit" value="Sign up!">
-         </div>
+         <input type="submit" value="Sign up!" class="submitButton">
 
     </form>
+     </div>
 
     <script src="js/script.js"></script>
 
@@ -49,7 +54,6 @@
              <!-- Your last name and year here in ALL assignments -->
               <hr>
               CST336 Interent Programming. 2026&copy; Nolen <br>
-              <strong>Disclaimer: </strong> This webpage is for academic purposes only.
 
                <figure>
                 <img src="img/csumb_logo.png">
