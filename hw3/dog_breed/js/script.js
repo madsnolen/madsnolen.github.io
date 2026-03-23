@@ -3,7 +3,6 @@ document.querySelector("#dogForm").addEventListener("submit", function(event){
     validateForm(event);
 });
 
-displayDogInfo(dog);
 
 // function to get dog data from API FETCH function with async/await
 async function getDogData(breed){

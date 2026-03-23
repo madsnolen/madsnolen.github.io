@@ -30,7 +30,7 @@ input[type="submit"]:hover {
     border-radius: 10px;
 }
 
-#error {
+#dogError {
     color: red;
     font-weight: bold;
 }
