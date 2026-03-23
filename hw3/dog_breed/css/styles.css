@@ -15,14 +15,14 @@ input[type="text"] {
 
 input[type="submit"] {
     padding: 8px 15px;
-    background-color: #4CAF50;
+    background-color: #2661cf;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #4571a0;
 }
 
 #dogImage {
