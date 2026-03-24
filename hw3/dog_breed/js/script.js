@@ -11,7 +11,7 @@ async function getDogData(breed){
 
     let response = await fetch(url, {
         headers: {
-            "X-Api-Key":"RF7wAJGIua9QWjTe7zubEb174KHFp1AeUMfDLfL6"
+            "X-Api-Key":"8adQUinql8o3yf4k0dyfhofkEKMP8U2cCeV6EcxA"
         }
 });
     let data = await response.json();
